@@ -22,7 +22,7 @@
 <body>
     <h2>Check Your Baggage Weight</h2>
     <p>Enter your baggage weight and click submit:</p>
-    <input type="text" id="bw" placeholder="Enter weight in kg">
+    <input type="text" id="bw" placeholder="Enter weight in kg"> <br> <br> 
     <button onclick="checkBaggageWeight()">Submit</button>
 </body>
 </html>
