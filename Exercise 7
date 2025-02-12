@@ -39,9 +39,8 @@
     </script>
 </head>
 <body>
-    <h2>Basket Calculator</h2>
+   <u> <h2>Basket Calculator</h2> </u> 
     <p>Enter your shopping basket (product: quantity) and price list (product: price).</p>
-
     <label for="basket" >Basket:</label>
     <textarea id="basket" placeholder='{"apple": 2, "banana": 3}' rows="3" cols="30"></textarea><br><br>
 
