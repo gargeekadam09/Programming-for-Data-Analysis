@@ -1,3 +1,16 @@
+//Exercise 7
+
+function f7(basket, prices) {
+    let totalCost = 0;
+
+    for (let product in basket) { 
+        if (prices.hasOwnProperty(product)) { 
+            totalCost += basket[product] * prices[product];
+        }
+    }
+    return totalCost; 
+}
+
 // Exercise 8
 
 class Basket {
