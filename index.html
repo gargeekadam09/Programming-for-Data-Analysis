@@ -1,1 +1,52 @@
+// Exercise 8
+
+class Basket {
+    constructor() {
+        this.items = {}; 
+    }
+
+    addItem(product, qty) {
+        if (this.items[product]) {
+            this.items[product] += qty;
+        } else {
+            this.items[product] = qty; 
+        }
+    }
+
+    getCost(prices) {
+        let totalCost = 0;
+        for (let product in this.items) {
+            if (prices[product] !== undefined) {
+                totalCost += this.items[product] * prices[product];
+            }
+        }
+        return totalCost;
+    }
+}
+
+//Exercise 9
+
+<html>
+<head>
+    <title>Basket Test</title>
+</head>
+<body>
+    <h2>Shopping Basket</h2>
+    Product Name: <input type="text" id="product"><br><br>
+    Quantity: <input type="number" id="quantity"><br><br>
+    <button onclick="addToBasket()">Add to Basket</button>
+    <button onclick="calculateTotal()">Get Total Cost</button>
+
+    <h3>Items in Basket:</h3>
+    <pre id="basketDisplay"></pre>
+
+    <h3>Total Cost:</h3>
+    <p id="totalCost"></p>
+
+ </body>
+</html>
+
+//Exercise 10
+
+
 
